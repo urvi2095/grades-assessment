@@ -6,6 +6,6 @@
 - Developed a Python Flask Application and deployed the classification and prediction model on Google Cloud.
 - Technologies used: Python, Azure ML, Flask, Google Cloud Platform.
 
-# For Demo: 
+## For Demo: 
 - https://youtu.be/n19w2lbwduM
 
