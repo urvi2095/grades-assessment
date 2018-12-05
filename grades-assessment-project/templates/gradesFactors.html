@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+.trustyou-progressbar{
+ width: 100px;
+ background-color: #FFFFFF;
+}
+.trustyou-puan{
+    font-size: 13px;
+    color:#494949;
+    font-weight: 500;
+}
+.progressFill{
+  width: 0%;
+  height: 30px;
+  background: #15D318;
+}
+.ani-puan{
+    display:block;
+    height:150%;
+}
+</style>
+  <title>Result</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br/>
+<center>
+			<h2 class="display-4 text-white">Your probability of grades being affected is:</h2>
+			<br/>
+			<br/>
+		<form>
+    <div style="text-align:center;">
+    <!--<b><center><input  id="inputsm" type="text" value={{resultStatus}} readonly></center></b> -->
+	{{resultStatus}}
+	</div>
+  	
+<div class="trustyou-progressbar progress-bar-striped active">
+			<div class="progressFill">
+				<span class="ani-puan" ani-puan="0"></span>
+			</div>
+		</div>
+		
+		<center><a href="/">Click here to go back to main page</a></center> 
+   </form>
+   </center>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+var i = {{prediction}};;
+var clear = setInterval(function(){
+	 
+	 $('.progressFill').text(i+'%');
+	 $('.progressFill').width(i+'%');
+	 
+	},1000); </script>
+</body>
+</html>
+
